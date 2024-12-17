@@ -1,4 +1,4 @@
-{% set version = '4.3.0' %}
+{% set version = "4.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fritools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fritools/fritools_{{ version }}.tar.gz
-  sha256: c6a49ded375a74c940b202252eb90f5ae6c65bcb266372e7734601c00a301051
+  sha256: 2fcb68b03123df978da04b162eeb98ea64515e937e14269c771207ca2291355c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,10 +35,7 @@ test:
 about:
   home: https://gitlab.com/fvafrcu/fritools
   license: BSD-2-Clause
-  summary: Miscellaneous utilities, tools and helper functions for finding and searching files
-    on disk, searching for and removing R objects from the workspace. Does not import
-    or depend on any third party package, but on core R only (i.e. it may depend on
-    packages with priority 'base').
+  summary: Miscellaneous utilities, tools and helper functions for finding and searching files on disk, searching for and removing R objects from the workspace. Does not import or depend on any third party package, but on core R only (i.e. it may depend on packages with priority 'base').
   license_family: BSD
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_2_clause'
