@@ -1,4 +1,4 @@
-{% set version = "4.4.0" %}
+{% set version = "4.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fritools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fritools/fritools_{{ version }}.tar.gz
-  sha256: 2fcb68b03123df978da04b162eeb98ea64515e937e14269c771207ca2291355c
+  sha256: dbae6813297534475ee48b9bcb7fa60678725aa2087c4375ad66ca77bddb4020
 
 build:
   number: 0
